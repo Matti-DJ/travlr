@@ -1,0 +1,59 @@
+Footer{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    justify-content: space-around;
+
+}
+
+
+/*Topic of each section*/
+.SectionTopic{
+    font-family: serif;
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: 15px;
+}
+
+/*small note for tralvr*/
+.TravlrNote{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: small;
+    color: rgb(55,55,55);
+    text-align: left;
+    max-width: 200px;
+    line-height: 1.5;
+}
+
+/*Quick links*/
+/*Links in each section because they are the same*/
+.SectionLinks{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(55,55,55);
+    font-size: small;
+    text-align: left;
+}
+
+.SectionLinks:hover{
+    color: rgb(46, 154, 255);
+    cursor: pointer;
+}
+
+/*Contact Details*/
+.ContactDetails{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(55,55,55);
+    font-size: small;
+    text-align: left;
+}  

@@ -1,0 +1,16 @@
+/*Navbar title*/
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.navbar-brand img {
+  margin-right: 0.5rem;
+}
+
+/*Navbar link*/
+.navbar .nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar .nav-link:hover {
+    color: rgb(46, 154, 255);
+}

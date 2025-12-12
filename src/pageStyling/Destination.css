@@ -1,0 +1,45 @@
+/*Destination Card layout*/
+#SideCardsInDestinationpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+    margin: auto;
+}
+
+/*Destination topic*/
+.DestinationTopic{
+    padding: 2rem;
+    text-align: center;
+}
+
+.DestinationTopic h1{
+    font-family: serif;
+    font-weight: bold;
+    color: black;
+}
+
+.DestinationTopic p{
+    color: gray;
+}
+
+/* View mroe destinations button styling*/
+#ViewMoreDestinationsButton{
+    background-color: transparent;
+    color: black;
+    border: 0.5px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#ViewMoreDestinationsButton:hover{
+    background-color: rgb(235, 235, 235);
+    transition: background-color 0.3s ease;
+}
+
+.DivViewMoreDestinations{
+    text-align: center;
+    padding-top: 1rem;
+}

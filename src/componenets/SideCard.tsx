@@ -9,10 +9,10 @@ interface SideCardProps {
     priceOriginal: number;
 }
 
-function SideCard({id, title, image, description, stay, priceOriginal}: SideCardProps) {
+function SideCard({id, title, image, description, priceOriginal}: SideCardProps) {
     return(
         <>
-            <div className="card SideCard">
+            <div className="card SideCard" key={id}>
                 <div className="SideCard-body">
                             <img src={image} alt="..."/>
                         <div className="SideCard-textbox">

@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.ExperienceTitle h1{
+.ExperienceTitle h1, h2{
     font-family: serif;
     font-weight: bold;
     color: black;
@@ -18,8 +18,13 @@
 .ExperiencesCard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
     padding: 1.5rem;
     margin: auto;
 }
 
+/*table for package journeys*/
+.PackageList {
+    width: 1000px;
+    margin: auto;
+}

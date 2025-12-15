@@ -2,20 +2,26 @@ import '..//componenets/ComponentsStyling/CardWithList.css'
 
 interface CardWithListProps {
     id: number;
+    price: string;
     image: string;
     title: string;
     description: string;
     bulletpoints: string[];
 }
 
-function CardWithList({id, image, title, description, bulletpoints}: CardWithListProps){
+function CardWithList({id, price, image, title, description, bulletpoints}: CardWithListProps){
     return (
         <div className="card CardWithList" key={id}>
             <img src={image} className="card-img" alt={title} />
             <div className="card-body">
-                <h5 className="card-title">
-                    {title}
-                </h5>
+                <div className='CardTopic'>
+                    <h5 className="card-title">
+                        {title}
+                    </h5>
+                    <p className="card-description">
+                        ${price} pp
+                    </p>
+                </div>
                 <p className="card-text-experiences">
                     {description}
                 </p>

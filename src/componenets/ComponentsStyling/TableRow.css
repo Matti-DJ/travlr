@@ -1,0 +1,39 @@
+/*Original price styling*/
+.priceOrg {
+    text-decoration: line-through;
+    color: gray !important;
+}
+
+/*new price*/
+.priceNew {
+    color: #082fff !important;
+    font-weight: bold;
+}
+
+/* package type*/
+.packageType {
+    font-weight: bold;
+}
+
+/*Book now button*/
+.booknowButton {
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: grey;
+}
+
+.booknowButton:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/*row in table*/
+.componenets-table-row:hover {
+    transform: translateY(-3px);
+    transition: all 1s ease;
+}
+
+.componenets-table-row{
+    transition: all 1s ease;
+}

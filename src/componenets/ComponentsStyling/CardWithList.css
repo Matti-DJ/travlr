@@ -1,0 +1,54 @@
+/*general card styling*/
+.CardWithList {
+    height : 100%;
+    width: 400px;
+}
+
+/*card list styling*/
+.card-bulletpoints {
+    list-style: none;
+    padding-left: 0;
+    color: gray;
+}
+
+.card-bulletpoint {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+.card-bulletpoint::before {
+    content: "";
+
+    position: absolute;
+    left: 10px;
+    top: 3px;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(./Experiences/check-mark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*card text*/
+.card-text-experiences {
+    color: gray;
+}
+
+
+/*card text*/
+.card-text-experiences {
+    color: gray;
+}
+
+/*card image*/
+.card-img {
+    border-radius: 0px;
+    height: 250px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+

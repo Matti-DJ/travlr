@@ -1,8 +1,8 @@
 import './ComponentsStyling/Footer.css';
 
-let QuickLinks = ['Home', 'Destinations', 'Experiences', 'About'];
-let PopularDestinations = ['Paris', 'New York', 'Tokyo', 'Maldives', 'Bali'];
-let ContactInfo = {
+const QuickLinks = ['Home', 'Destinations', 'Experiences', 'About'];
+const PopularDestinations = ['Paris', 'New York', 'Tokyo', 'Maldives', 'Bali'];
+const ContactInfo = {
     email: 'managment@travlr.com',
     phone: '+1 (123) 456-7890',
     address: '123 Travel St, Travlr City, World'

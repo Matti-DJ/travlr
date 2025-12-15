@@ -8,7 +8,7 @@ interface CardProps {
     stay: number
 }
 
-function Card({ id, title, image, description, stay}: CardProps) {
+function Card({ id, title, image, description}: CardProps) {
     return (
         <>
             <div className="CardContainer" id={`Card-${id}`}>

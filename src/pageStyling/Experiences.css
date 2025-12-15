@@ -1,0 +1,25 @@
+/*Title of page*/
+.ExperienceTitle {
+    padding: 2rem;
+    text-align: center;
+}
+
+.ExperienceTitle h1{
+    font-family: serif;
+    font-weight: bold;
+    color: black;
+}
+
+.ExperienceTitle p{
+    color: gray;
+}
+
+/*Cards styling*/
+.ExperiencesCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    padding: 1.5rem;
+    margin: auto;
+}
+

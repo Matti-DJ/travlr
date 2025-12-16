@@ -1,0 +1,93 @@
+/*Title*/
+.AboutUsTitle {
+    padding: 2rem;
+    text-align: center;
+}
+
+.AboutUsTitle h1, h2{
+    font-family: serif;
+    font-weight: bold;
+    color: black;
+}
+
+.AboutUsTitle p{
+    color: gray;
+    font-size: large;
+}
+
+/*Story part of tralvr*/
+.TravlerStory {
+    padding: 2rem;
+    text-align: left;
+    color: gray;
+}
+
+/*Achievments*/
+.AchievementsInAboutUsContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 4rem;
+    padding-bottom: 1rem;
+}
+
+.AchievementsInAboutUsContainer h5{
+    font-family: serif;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.AchievementsInAboutUsContainer p{
+    flex-basis: 100%;
+    color: gray;
+    font-size: 0.9rem;
+    width: 150px;
+}
+
+.AchievementsInAboutUsContainer img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+/*Employee Card*/
+.EmployeeCards {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    justify-items: center;
+}
+
+/*Values*/
+/*Achievments*/
+.Values{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 4rem;
+    padding-bottom: 1rem;
+}
+
+.Values h5{
+    font-family: serif;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.Values p{
+    flex-basis: 100%;
+    color: gray;
+    font-size: 0.9rem;
+    width: 150px;
+}
+
+.Values img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+

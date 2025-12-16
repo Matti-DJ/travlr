@@ -1,0 +1,17 @@
+/* Achievements */
+.AchievementsInAboutUs h5{
+    font-family: serif;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/*Achievement animation*/
+.AchievementsInAboutUs{
+    transition: all 1s ease;
+}
+
+.AchievementsInAboutUs:hover{
+    transform: translateY(-10px);
+    transition: all 1s ease;
+}

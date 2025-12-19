@@ -31,6 +31,20 @@ Footer{
 }
 
 /*Quick links*/
+.QuickLinks {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(55,55,55);
+    font-size: small;
+    text-align: left;
+}
+.QuickLinks:hover {
+    color: rgb(46, 154, 255);
+    cursor: pointer;
+}
+
 /*Links in each section because they are the same*/
 .SectionLinks{
     color: black;

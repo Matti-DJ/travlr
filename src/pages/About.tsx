@@ -8,29 +8,38 @@ import Value from "../componenets/Value.tsx";
 {/*Info about employees*/}
 const Employeedata = [
     {
-        id: 1, name: "Matthias de Jong", image: "CEO.png", position: "Founder & CEO",
+        id: 1, name: "Matthias de Jong", image: "./public/AboutUs/CEO.jpeg", position: "Founder & CEO",
     },
     {
-        id: 2, name: "Gregor Brutter", image: "./public/AboutUs/headOfOperations.jpeg", position: "Head of Operations",
+        id: 2, name: "Gregor Butter", image: "./public/AboutUs/headOfOperations.jpeg", position: "Head of Operations",
     },
     {
         id: 3, name: "Edje & sonya", image: "./public/AboutUs/travelDirectors.jpeg", position: "Travel Directors",
+    },
+    {
+        id: 4, name: "Sophie van Ganopyl", image: "./public/AboutUs/HumanRecourses.jpeg", position: "Human Recourses",
+    },
+    {
+        id: 5, name: "Sebastian Shuffler", image: "./public/AboutUs/AMS.jpeg", position: "AMS Employee",
+    },
+    {
+        id: 6, name: "Denis Gibkopf", image: "./public/AboutUs/CreativeDirector.png", position: "Creative Director",
     }
 ]
 
 {/*Achievements Data*/}
 const AchievementsData = [
     {
-        image: "./public/AboutUs/Destinations.png", title: "50+", description: "Destinations"
+        image: "./public/AboutUs/Destinations.png", title: 73, description: "Destinations"
     },
     {
-        image: "./public/AboutUs/Customers.png", title: "100.000+", description: "Happy customers"
+        image: "./public/AboutUs/Customers.png", title: 10000000, description: "Happy customers"
     },
     {
-        image: "./public/AboutUs/Awards.png", title: "30", description: "Awards Won"
+        image: "./public/AboutUs/Awards.png", title: 180, description: "Awards Won"
     },
     {
-        image: "./public/AboutUs/CustomerSatisfaction.png", title: "110%", description: "Customer Satisfaction"
+        image: "./public/AboutUs/CustomerSatisfaction.png", title: 100, description: "Customer Satisfaction"
     }
 ]
 
@@ -88,7 +97,7 @@ function About() {
                     Crucially, Travlr’s platform fully integrates global flight access with its vast inventory of experiences and accommodations. The booking process is designed to be intuitive and experience-driven: a user selects an activity, and the system automatically provides optimized flight and accommodation options, creating a single, cohesive itinerary. This unification significantly reduces administrative friction for the traveler.
                 </p>
                 <p>
-                    Since 2019, Travlr has expanded globally, moving from a consumer-facing tool to an enterprise-grade solution. Today, it stands as a sophisticated B2B2C platform that empowers major partners to leverage its technology, vast inventory (including over 400 airlines and millions of experiences), and competitive pricing.
+                    Since 2019, Travlr has expanded globally, moving from a consumer-facing tool to an enterprise-grade solution. Today, it stands as a sophisticated B2B2C platform that empowers major partners to leverage its technology, vast inventory (including over 400 airlines and hundreds of experiences), and competitive pricing.
 
                     Travlr has redefined the travel narrative by positioning the experience as the primary product, with logistics acting as the professional, frictionless delivery mechanism. The company's trajectory is one of continuous technological evolution aimed at making every journey, from initial inspiration to final destination, perfectly integrated and memorable.
                 </p>

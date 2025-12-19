@@ -1,17 +1,26 @@
 /* Achievements */
-.AchievementsInAboutUs h5{
+/*text that counts up*/
+.count-up-text{
     font-family: serif;
     font-weight: bold;
-    margin-bottom: 0.5rem;
-    margin-top: 0;
+    margin-top: -15px;
+    font-size: 1.5rem;
 }
 
-/*Achievement animation*/
+/*Achievement animation and alignment fo items*/
 .AchievementsInAboutUs{
     transition: all 1s ease;
+    display: grid;
+    margin: 0;
+    justify-items: center;
 }
 
 .AchievementsInAboutUs:hover{
     transform: translateY(-10px);
     transition: all 1s ease;
+}
+
+/*Image for achievment*/
+.Achievements__image{
+    margin-bottom: -10px;
 }

@@ -1,7 +1,12 @@
 import './ComponentsStyling/Footer.css';
 
-const QuickLinks = ['Home', 'Destinations', 'Experiences', 'About'];
-const PopularDestinations = ['Paris', 'New York', 'Tokyo', 'Maldives', 'Bali'];
+const QuickLinksData = [
+    { name: 'Home', path: '/' },
+    { name: 'Destinations', path: '/destinations' },
+    { name: 'Experiences', path: '/experiences' },
+    { name: 'About', path: '/about' }
+];
+const PopularDestinations = ['Vienna', 'Las Vegas', 'Tokyo', 'Maldives', 'Bali'];
 const ContactInfo = {
     email: 'managment@travlr.com',
     phone: '+1 (123) 456-7890',
@@ -23,9 +28,12 @@ function Footer() {
             <div className='FooterQuickLinks'>
                 <h5 className="SectionTopic">Quick Links</h5>
                 <ul style={{listStyleType: "none", paddingLeft: 0}}>
-                    {QuickLinks.map((QuickLinks) => (
-                        <li key={QuickLinks}><a href ="#" className='SectionLinks'>{QuickLinks}</a>
-                    </li>
+                    {QuickLinksData.map((link) => (
+                        <li key={link.name}>
+                            <a href={link.path} className='QuickLinks'>
+                                {link.name}
+                            </a>
+                        </li>
                 ))}
                 </ul>
             </div>

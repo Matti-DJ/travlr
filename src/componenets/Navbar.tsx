@@ -6,7 +6,7 @@ function Navbar() {
             <div id="NavbarContainer">
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
-                        <a className="navbar-brand " href="#">
+                        <a className="navbar-brand " href="/">
                             <img src="./Gemini-logo.png" alt="Logo" width="40" height="40" className="d-inline-block align-text-center"/>
                             Travlr
                         </a>

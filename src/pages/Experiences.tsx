@@ -4,7 +4,6 @@ import '..//pageStyling/Experiences.css'
 import CardWithList from "../componenets/CardWithList.tsx";
 import TableRow from "../componenets/TableRow.tsx";
 
-{/*values for the cards in the top*/}
 const bulletpointsforCards = [
     {   id: 1,
         price: '1650',
@@ -72,7 +71,6 @@ const bulletpointsforCards = [
     }
 ]
 
-{/* values for the table in the end*/}
 const TableValues = [
 
     {
@@ -106,13 +104,14 @@ const TableValues = [
     }
 ]
 
+
 function Experiences() {
     return (
         <>
-            {/* Navbar */}
+            {/* Navigation bar */}
             <Navbar/>
 
-            {/*Experiences Title*/}
+            {/* Page header for experiences section */}
             <div className="ExperienceTitle">
                 <h1>
                     Curated Experiences
@@ -122,7 +121,7 @@ function Experiences() {
                 </p>
             </div>
 
-            {/*Experiences cards*/}
+            {/* Experience cards section */}
             <div className="ExperiencesCard">
                 {bulletpointsforCards.map((point) => (
                    <CardWithList
@@ -136,7 +135,7 @@ function Experiences() {
                 ))}
             </div>
 
-            {/*Topic for package options*/}
+            {/* Package options section header */}
             <div className="ExperienceTitle">
                 <h2>
                     Curated Experiences
@@ -146,10 +145,9 @@ function Experiences() {
                 </p>
             </div>
 
-            {/*List of package options*/}
+            {/* Package pricing table */}
             <div className="PackageList">
                 <table className="table table-striped">
-                    {/* Header for table  */}
                     <thead>
                     <tr>
                         <th scope="col">Package type</th>
@@ -160,7 +158,7 @@ function Experiences() {
                     </tr>
                     </thead>
 
-                    {/* Body, values occur multiple times */}
+                    {/* Table body with package data */}
                     <tbody>
                     {TableValues.map((item) => (
                         <TableRow
@@ -176,12 +174,8 @@ function Experiences() {
                 </table>
             </div>
 
-            {/*Experience Cards*/}
-            <div>
 
-            </div>
-
-            {/*Footer*/}
+            {/* Footer section */}
             <Footer/>
         </>
     );

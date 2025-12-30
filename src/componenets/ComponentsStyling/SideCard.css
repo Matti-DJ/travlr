@@ -47,3 +47,57 @@
     color: gray;
     height: 100px;
 }
+
+/*Mobile*/
+@media (max-width: 800px) {
+    /*general styling*/
+    .SideCard{
+        width: 95% !important;
+        height: 250px;
+    }
+
+    .SideCard-body{
+        width: 100% !important;
+        height: 250px;
+        align-items: row;
+        display: flex;
+    }
+
+    /*side card image*/
+    .SideCard-body img{
+        width: 60%;
+        height: 250px;
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    /*SideCard text box*/
+    .SideCard-textbox {
+        width: 40%;
+        height: 250px;
+        padding: 1rem;
+        padding-top: 15px;
+    }
+
+    /*CardTopic*/
+    .CardTopic{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .CardTopic h5 {
+        font-family: serif;
+        font-weight: bold;
+    }
+
+    .CardTopic p{
+        color: rgb(17, 65, 209);
+    }
+
+    /*SideCard-info*/
+    .SideCard-info {
+        color: gray;
+        height: 100px;
+    }
+}

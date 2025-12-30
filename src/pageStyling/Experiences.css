@@ -25,6 +25,21 @@
 
 /*table for package journeys*/
 .PackageList {
-    width: 1000px;
+    max-width: 100%;
     margin: auto;
+}
+
+/*Mobile*/
+@media (max-width: 800px) {
+
+    /*Cards styling*/
+    .ExperiencesCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 500px;
+        margin: 0 auto;
+        justify-items: center;
+    }
 }

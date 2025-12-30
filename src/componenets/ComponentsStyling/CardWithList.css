@@ -1,7 +1,7 @@
 /*general card styling*/
 .CardWithList {
     height : 95%;
-    width: 400px;
+    width: 100%;
 }
 
 /*card list styling*/
@@ -37,12 +37,6 @@
     color: gray;
 }
 
-
-/*card text*/
-.card-text-experiences {
-    color: gray;
-}
-
 /*card image*/
 .card-img {
     border-radius: 0px;
@@ -51,4 +45,23 @@
     object-fit: cover;
 }
 
+/*mobile*/
+@media (max-width: 800px) {
+
+    .CardTopic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .CardTopic h5, .CardTopic p {
+        padding-left: 15px;
+    }
+
+    .CardWithList {
+        height: auto;
+        width: 100%;
+    }
+}
 

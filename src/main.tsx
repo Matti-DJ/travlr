@@ -11,9 +11,13 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Homepage route*/}
         <Route path="/" element={<Homepage />} />
+        {/* Destinations route*/}
         <Route path="/destinations" element={<Destinations />} />
+        {/* Experiences route*/}
         <Route path="/experiences" element={<Experiences />} />
+        {/* About route*/}
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>

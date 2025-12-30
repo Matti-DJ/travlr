@@ -16,7 +16,7 @@ function Achievments({image, title, description}: AchievementsProps) {
                 to={title}
                 separator=". "
                 direction="up"
-                duration={2}
+                duration={1}
                 className="count-up-text"
             />
             <p>{description}</p>

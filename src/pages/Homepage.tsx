@@ -1,9 +1,13 @@
 import Card from "../componenets/Card";
 import Footer from "../componenets/Footer";
 import Navbar from "../componenets/Navbar";
+
 import '../pageStyling/Homepage.css';
 
-//travlr card destinations data
+/**
+ * Array of destination objects for travlr cards
+ * Contains information about popular travel destinations
+ */
 const destinations = [
     { id: 1, title: "Vienna", image: "./ViennaCard.webp", description: "Have a great adventure in the city of music" , stay: 7},
     { id: 2, title: "London", image: "./LondonCard.jpeg", description: "See the World in a Single City.", stay: 5},
@@ -11,7 +15,10 @@ const destinations = [
     { id: 4, title: "Rio de Janeiro", image: "./RioDeJaneiroCard.jpg", description: "Your Brazilian Epic Starts Here.", stay : 10},
 ];
 
-//travler details data 
+/**
+ * Array of travlr details highlighting company features
+ * Contains icons, titles, and descriptions of key benefits
+ */
 const travlrDetails = [
     {id: 1, image: "./World-htd.png", title: "Personalized trips", description: "Tailor-made travel plans."},
     {id: 2, image: "./Lock-htd.png", title: "Safe & Secure", description: "Safety with top-notch security measures."},
@@ -19,30 +26,36 @@ const travlrDetails = [
     {id: 4, image: "./Award-htd.png", title: "Award winning", description: "Highest quality service for all our customers."}, 
 ]
 
+/**
+ * Homepage component - Main landing page of the Travlr application
+ * Displays featured journeys carousel, popular destinations, and company highlights
+ */
 function Homepage() {
     return (
         <>
-            {/* Navbar */}
+            {/* Navigation bar section */}
             <div className="Navbar" id="NavbarInHomepage">
                 <Navbar />
             </div>
 
-            {/*Carousel Topic*/}
+            {/* Carousel section header */}
             <div className="TopicHomepage"id="CarouselTopicInHomepage">
                 <h2>Featured Journeys</h2>
                 <p>Handpicked from Travlr, for you</p>
             </div>
 
-
-            {/* Carousel*/}
+            {/* Bootstrap carousel showcasing featured destinations */}
             <div id="CarouselInHomepage">
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                    {/* Carousel indicators for navigation */}
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
+                    {/* Carousel slides container */}
                     <div className="carousel-inner">
+                        {/* Tokyo slide - First/Active slide */}
                         <div className="carousel-item active">
                             <img src="./TokyoCarousel.webp" className="d-block" alt="..." />
                             <div className="carousel-caption d-none d-md-block" id="CarouselTokyo">
@@ -50,6 +63,7 @@ function Homepage() {
                                 <p>Discover the vastness of the largest metropolis in the world</p>
                             </div>
                         </div>
+                        {/* Maldives slide - Second slide */}
                         <div className="carousel-item">
                             <img src="MaldivesCarousel.jpg" className="d-block" alt="..." />
                             <div className="carousel-caption d-none d-md-block" id="CarouselMaldives">
@@ -57,6 +71,7 @@ function Homepage() {
                                 <p>Relaxation combined with luxury and Iconic views</p>
                             </div>
                         </div>
+                        {/* Bali slide - Third slide */}
                         <div className="carousel-item">
                             <img src="BaliCarousel.webp" className="d-block" alt="..." />
                             <div className="carousel-caption d-none d-md-block" id="CarouselBali">
@@ -65,10 +80,12 @@ function Homepage() {
                             </div>
                         </div>
                     </div>
+                    {/* Previous button for carousel navigation */}
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Previous</span>
                     </button>
+                    {/* Next button for carousel navigation */}
                     <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
@@ -76,13 +93,13 @@ function Homepage() {
                 </div>
             </div>
 
-            {/*Cards Topic*/}
+            {/* Popular destinations section header */}
             <div className="TopicHomepage"id = "CardsTopicInHomepage">
                 <h2>Popular Destinations</h2>
                 <p>Discover our most popular Journeys</p>
             </div>
 
-            {/*Cards*/}
+            {/* Display destination cards using map function */}
             <div id="CardsInHomepage">
                 {destinations.map((destination) => (
                     <Card 
@@ -96,7 +113,7 @@ function Homepage() {
                 ))}
             </div>
 
-            {/*View all destinations button*/}
+            {/* Button to navigate to all destinations page */}
             <div id="DivViewAllDestinationsButtonInHomepage">   
                 <a href="/destinations">
                     <button id="ViewAllDestinationsButtonInHomepage">
@@ -105,7 +122,7 @@ function Homepage() {
                 </a>
             </div>
 
-            {/*Travlr details*/}
+            {/* Company highlights section displaying key features */}
             <div id="AllTravlrDetailsInHomepage">
                 {travlrDetails.map((detail) => (
                     <div key={detail.id} className="TravlrDetailInHomepage">
@@ -116,12 +133,10 @@ function Homepage() {
                 ))}
             </div>
 
-            {/*Footer */}
+            {/* Footer section */}
             <div className="Footer" id="FooterInHomepage">
                 <Footer />
             </div>
-
-
         </>
     );
 }

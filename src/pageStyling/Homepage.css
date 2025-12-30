@@ -1,4 +1,4 @@
-/*Carousel Topic styling*/
+/*Topic styling*/
 .TopicHomepage{
     text-align: center;
     margin-top: 2rem;
@@ -105,4 +105,51 @@
 .TravlrDetailInHomepage:hover{
     transform: translateY(-10px);
     transition: all 1s ease;
+}
+
+/*Mobile*/
+@media (max-width: 800px){
+
+    /*Topics*/
+    .TopicHomepage{
+        text-align: center;
+        margin-top: 1.5rem;
+        font-family: serif;
+    }
+
+    .TopicHomepage h2{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .TopicHomepage p{
+        font-size: 1rem;
+        color: gray;
+        margin-bottom: 0.5rem;
+    }
+
+    /*Carousel*/
+    #CarouselInHomepage img{
+        height: 70vh;
+    }
+
+    /*Cards*/
+    #CardsInHomepage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Travlr details*/
+    .TravlrDetailInHomepage{
+        transition: all 1s ease;
+        padding: 1rem;
+    }
+
+    .TravlrDetailInHomepage:hover{
+        transform: translateY(-10px);
+        transition: all 1s ease;
+    }
 }

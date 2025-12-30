@@ -1,0 +1,11 @@
+/*Mobile*/
+@media (max-width: 800px) {
+    .card {
+        max-width: 80%;
+        min-height: 100%;
+    }
+
+    .card img {
+        min-height: 80%;
+    }
+}

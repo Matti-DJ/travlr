@@ -1,11 +1,16 @@
+// Import necessary components
 import Footer from "../componenets/Footer";
 import Navbar from "../componenets/Navbar";
 import SideCard from "../componenets/SideCard";
 
-//Style import
+// Import page-specific styles
 import '..//pageStyling/Destination.css'
 
-//Cards date
+/**
+ * Array of destination objects
+ * Contains detailed information about available travel destinations including
+ * id, title, image, description, duration of stay, and pricing
+ */
 const destinations= [
     { id: 1, title: "Vienna", image: "./ViennaCard.webp", description: "Have a great adventure in the city of music" , stay: 7, priceOriginal: 1400},
     { id: 2, title: "London", image: "./LondonCard.jpeg", description: "See the World in a Single City.", stay: 5, priceOriginal: 700},
@@ -17,19 +22,25 @@ const destinations= [
     { id: 8, title: "Islambad", image: "./IslambadCard.webp", description: "Most beautiful city in middle asia", stay: 4, priceOriginal: 799},
 ]
 
+/**
+ * Destinations component - Browse destinations page
+ * Displays all available travel destinations with detailed information
+ * including pricing and allows users to book trips
+ */
 function Destinations() {
     return (
         <>
-            {/* Navbar */}
+            {/* Navigation bar */}
             <Navbar/>
 
-            {/* Destinations Topic */}
+            {/* Page header section with title and description */}
             <div className="DestinationTopic">
                 <h1>Explore Destination</h1>
                 <p>Browse available destinations around the world</p>
             </div>
 
-            {/*Destination Cards*/}
+            {/* Destination cards grid section */}
+            {/* Maps through destinations array and renders a SideCard for each destination */}
             <div id="SideCardsInDestinationpage">
                 {destinations.map((destination) => (
                     <SideCard 
@@ -44,7 +55,8 @@ function Destinations() {
                 ))}
             </div>
 
-            {/*View more*/}
+            {/* View more button section */}
+            {/* Allows users to load additional destinations (currently links to #) */}
             <div className="DivViewMoreDestinations">
                <a href="#">
                     <button id="ViewMoreDestinationsButton">
@@ -53,7 +65,7 @@ function Destinations() {
                 </a>
             </div>
             
-            {/*Footer*/}
+            {/* Footer section */}
             <Footer/>
         </>
     );

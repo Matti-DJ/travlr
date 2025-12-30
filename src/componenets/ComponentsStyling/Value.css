@@ -15,3 +15,13 @@
     transform: translateY(-10px);
     transition: all 1s ease;
 }
+
+@media (max-width: 800px) {
+    .AchievementsInAboutUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}

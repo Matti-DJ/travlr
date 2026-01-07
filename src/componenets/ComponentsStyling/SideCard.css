@@ -52,12 +52,12 @@
 @media (max-width: 800px) {
     /*general styling*/
     .SideCard{
-        width: 95% !important;
+        width: 450px;
         height: 250px;
     }
 
     .SideCard-body{
-        width: 100% !important;
+        width: 450px;
         height: 250px;
         align-items: row;
         display: flex;
@@ -65,7 +65,7 @@
 
     /*side card image*/
     .SideCard-body img{
-        width: 60%;
+        width: 250px;
         height: 250px;
         border-radius: 0px;
         border-top-left-radius: 15px;
@@ -74,7 +74,7 @@
 
     /*SideCard text box*/
     .SideCard-textbox {
-        width: 40%;
+        width: 200px;
         height: 250px;
         padding: 1rem;
         padding-top: 15px;
@@ -89,15 +89,18 @@
     .CardTopic h5 {
         font-family: serif;
         font-weight: bold;
+        font-size: 1rem;
     }
 
     .CardTopic p{
         color: rgb(17, 65, 209);
+        font-size: small;
     }
 
     /*SideCard-info*/
     .SideCard-info {
         color: gray;
         height: 100px;
+        font-size: small;
     }
 }

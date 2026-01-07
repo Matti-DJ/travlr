@@ -26,20 +26,30 @@
 /*table for package journeys*/
 .PackageList {
     max-width: 100%;
+    width: 80%;
     margin: auto;
 }
 
 /*Mobile*/
 @media (max-width: 800px) {
+    .ExperienceTitle {
+        padding: 1.5rem 1rem;
+    }
+
+    .ExperienceTitle h1 {
+        font-size: 1.75rem;
+    }
 
     /*Cards styling*/
     .ExperiencesCard {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 2rem;
-        max-width: 500px;
-        margin: 0 auto;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .PackageList {
+        width: 100%;
     }
 }

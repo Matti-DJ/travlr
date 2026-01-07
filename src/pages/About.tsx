@@ -87,23 +87,19 @@ function About() {
                     <h2>
                         Our Story
                     </h2>
-                    {/* First paragraph - Company origins and market positioning */}
                     <p>
                         The story of Travlr is one of strategic pivot and technological consolidation, establishing the company as a leader in the next generation of global travel commerce. Though its origins trace back to 2017 with the successful launch of The Bali Bible, the professional platform known as Travlr was formally established and scaled in late 2019 to address the fragmentation of the digital travel market.
                     </p>
-                    {/* Second paragraph - Founding vision and initial focus */}
                     <p>
                         Travlr was founded on the insight that travel booking was overly complicated, requiring users to jump between content sites, flight aggregators, and experience platforms. CEO Elara Vance's vision was to create a single ecosystem where planning, and booking were seamlessly unified.
 
                         The initial focus was on providing curated, high-quality destination experiences, building a reputation for authenticity and depth over simple volume. This included exclusive offerings like masterclasses with local artisans, private cultural tours, and specialized adventure expeditions.
                     </p>
-                    {/* Third paragraph - Key innovations and technology */}
                     <p>
                         Travlr's key innovation was its proprietary Travel-as-a-Service (TaaS) model and its multi-tenant, white-label technology. This technology allows global brands (like media companies and major corporations) to effortlessly launch their own branded travel storefronts, powered entirely by Travlr's robust backend.
 
                         Crucially, Travlr's platform fully integrates global flight access with its vast inventory of experiences and accommodations.
                     </p>
-                    {/* Fourth paragraph - Growth and current status */}
                     <p>
                         Since 2019, Travlr has expanded globally, moving from a consumer-facing tool to an enterprise-grade solution. Today, it stands as a sophisticated B2B2C platform that empowers major partners to leverage its technology, vast inventory (including over 400 airlines and hundreds of experiences), and competitive pricing.
 

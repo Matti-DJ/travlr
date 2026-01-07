@@ -108,48 +108,47 @@
 }
 
 /*Mobile*/
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
     /*Topics*/
-    .TopicHomepage{
+    .TopicHomepage {
         text-align: center;
         margin-top: 1.5rem;
         font-family: serif;
     }
 
-    .TopicHomepage h2{
+    .TopicHomepage h2 {
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
 
-    .TopicHomepage p{
+    .TopicHomepage p {
         font-size: 1rem;
         color: gray;
         margin-bottom: 0.5rem;
     }
 
     /*Carousel*/
-    #CarouselInHomepage img{
-        height: 70vh;
+    #CarouselInHomepage img {
+        height: 50vh;
+        object-fit: cover;
     }
 
-    /*Cards*/
-    #CardsInHomepage{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*Travlr details*/
-    .TravlrDetailInHomepage{
-        transition: all 1s ease;
+    #CarouselInHomepage {
         padding: 1rem;
     }
 
-    .TravlrDetailInHomepage:hover{
-        transform: translateY(-10px);
-        transition: all 1s ease;
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    /*Cards*/
+    #CardsInHomepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
     }
 }

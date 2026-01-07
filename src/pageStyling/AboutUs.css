@@ -115,7 +115,7 @@
     }
 
     .TravlrStory {
-        grid-template-columns: 1fr; /* Stack story text and image */
+        grid-template-columns: 1fr;
     }
 
     .TravlrStoryText {
@@ -129,7 +129,7 @@
     }
 
     .TravlrStoryImage img {
-        max-width: 200px; /* Prevent the logo/image from being too large */
+        max-width: 200px;
     }
 
     .AchievementsInAboutUsContainer {
@@ -139,7 +139,7 @@
     }
 
     .EmployeeCards {
-        grid-template-columns: 1fr; /* Single column for employees */
+        grid-template-columns: 1fr;
         gap: 2rem;
         padding: 1rem;
     }
@@ -151,7 +151,7 @@
     }
 
     .Values p, .AchievementsInAboutUsContainer p {
-        width: 100%; /* Allow text to wrap naturally */
+        width: 100%;
         max-width: 250px;
     }
 }

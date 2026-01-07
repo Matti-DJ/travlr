@@ -63,75 +63,56 @@
 @media (max-width: 800px) {
     .CardContainer {
         display: flex;
+        justify-content: center;
         width: 100% !important;
-        padding: 20px;
+        padding: 10px;
     }
 
     .card {
+        display: flex;
+        flex-direction: column;
         width: 100% !important;
+        max-width: 400px;
         border-radius: 15px;
-        height: 25rem;
+        height: 100%;
         transition: all 1s ease;
+        overflow: hidden;
     }
 
     .card:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transform: translateY(-5px);
-        transition: all 1s ease;
     }
 
     /*Card img*/
     .card img {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        height: 15rem;
-    }
-
-    .card-text{
-        font-size: 1rem;
-        color: gray;
-        height: 50px;
-        text-align: center;
-    }
-
-    .card-stay{
-        color: grey;
-        font-size: 1rem;
-        height: 20px;
-    }
-
-    .card h5 {
-        font-family: serif;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .card-title-price {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        padding-bottom: 5px;
-    }
-
-    .card-title-price h5 {
-        margin: 0;
-        flex: 1;
-    }
-
-    .card-title-price p {
-        margin: 0;
-        white-space: nowrap;
+        height: 200px;
+        object-fit: cover;
     }
 
     .card-body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem;
+        flex-grow: 1;
+    }
+
+    .card-title-price {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .card-text {
+        height: auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 
     #CardButton {
         width: 100%;
+        margin-top: 1rem;
     }
 }

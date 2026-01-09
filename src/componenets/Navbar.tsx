@@ -6,6 +6,7 @@ function Navbar() {
             <div id="NavbarContainer">
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
+                        {/*The logo and company name*/}
                         <a className="navbar-brand " href="/">
                             <img src="./Gemini-logo.png" alt="Logo" width="40" height="40" className="d-inline-block align-text-center"/>
                             Travlr
@@ -15,6 +16,7 @@ function Navbar() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto" id ="navbarNav">
+                            {/*List for the nav-links in teh Navbar*/}
                             <li className="nav-item">
                             <a className="nav-link" href="/">Home</a>
                             </li>

@@ -12,9 +12,11 @@ export interface TableValues {
 function TableRow({ packageType, duration, priceOrg, priceNew }: TableValues) {
     return (
         <tr className="componenets-table-row">
+            {/*List for the quick trips*/}
             <td className="packageType">{packageType}</td>
             <td>{duration} days</td>
             <td className="priceOrg">{priceOrg}</td>
+            {/*the price for those trips which counts down using react bits*/}
             <td className="priceNew"><CountUp
                 from={priceNew}
                 to={priceOrg}

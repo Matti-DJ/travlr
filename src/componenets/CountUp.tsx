@@ -1,6 +1,8 @@
 import { useInView, useMotionValue, useSpring } from 'motion/react';
 import { useCallback, useEffect, useRef } from 'react';
 
+{/*A number which counts up with a animation from react bits*/}
+
 interface CountUpProps {
     to: number;
     from?: number;

@@ -5,9 +5,7 @@
 }
 
 .SideCard-body{
-    width: 680px;
     height: 300px;
-    align-items: row;
     display: flex;
 }
 
@@ -22,7 +20,7 @@
 
 /*SideCard text box*/
 .SideCard-textbox {
-    width: 300px;
+    flex-grow: 1;
     height: 300px;
     padding: 2rem;
 }
@@ -52,15 +50,13 @@
 @media (max-width: 800px) {
     /*general styling*/
     .SideCard{
-        width: 450px;
+        width: 500px;
         height: 250px;
     }
 
     .SideCard-body{
-        width: 450px;
         height: 250px;
-        align-items: row;
-        display: flex;
+        display: flex; 
     }
 
     /*side card image*/
@@ -74,7 +70,7 @@
 
     /*SideCard text box*/
     .SideCard-textbox {
-        width: 200px;
+        flex-grow: 1;
         height: 250px;
         padding: 1rem;
         padding-top: 15px;
@@ -95,6 +91,10 @@
     .CardTopic p{
         color: rgb(17, 65, 209);
         font-size: small;
+    }
+
+    .price-label {
+        display: none;
     }
 
     /*SideCard-info*/

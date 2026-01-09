@@ -18,7 +18,7 @@ function SideCard({id, title, image, description, priceOriginal}: SideCardProps)
                         <div className="SideCard-textbox">
                             <div className='CardTopic'>
                                 <h5 className="SideCard-title">{title}</h5>
-                                <p className="SideCard-price">${priceOriginal} pp</p>
+                                <p className="SideCard-price">${priceOriginal} <span className="price-label">pp</span></p>
                             </div>
                             <div className="SideCard-info">
                                 <p className='SideCard-description'>{description}</p>
